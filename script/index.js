@@ -64,3 +64,9 @@ for (let i of allsets) {
         }
     })
 }
+
+document.getElementById('modle-btn').addEventListener('click', function () {
+    const t = document.getElementById('next');
+    t.classList.remove('hidden');
+    t.classList.add('');
+})
