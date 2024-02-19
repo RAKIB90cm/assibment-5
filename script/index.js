@@ -1,4 +1,4 @@
-
+// click only 4 seat 
 let count = 0;
 
 // set left 
@@ -42,12 +42,25 @@ for (let i of allsets) {
             grandTotal.innerText = totalGrand;
 
             // append child 
-            const para = document.createElement('p');
-            para.innerHTML = i.innerHTML;
-            document.getElementById('appnd').appendChild(para);
+            const para1 = document.createElement('p');
+            const para2 = document.createElement('p');
+            const para3 = document.createElement('p');
 
-            
+            para1.innerText = i.innerHTML;
+            para2.innerText = 'Economy';
+            para3.innerText = 550;
 
+            const li = document.createElement('li');
+            li.appendChild(para1);
+            li.appendChild(para2);
+            li.appendChild(para3);
+            console.log(li);
+
+            const v = document.getElementById('appnd');
+            v.appendChild(li);
+
+            li.style.display = 'flex';
+            li.style.justifyContent = 'space-evenly';
         }
     })
 }
